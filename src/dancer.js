@@ -28,6 +28,10 @@ Dancer.prototype.lineUp = function() {
   this.setPosition(this.top, 50);
 };
 
+Dancer.prototype.bounce = function() {
+  this.setPosition(this.top, 50);
+};
+
 
 // Function.prototype.bind = function(context) {
 //   var fn = this;

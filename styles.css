@@ -30,11 +30,12 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
   transition: left .5s;
+  transition: top .5s;
 }
 .shaky{
   border:6px solid LimeGreen;
   border-radius:2px;
-  transition: left .5s;
+  transition: top .5s;
   -webkit-transition: left 2s; /* Safari */
 /*  background: url("marcus_dancer.jpg");
 */
@@ -42,7 +43,6 @@ body, a:link, a:visited, a:active{
 
 .fancy{
   /*this overwrites the code placed in the html*/
-  transition: left .5s;
   border:10px solid red;
   border-radius:20x;
   animation: myfirst 5s;
