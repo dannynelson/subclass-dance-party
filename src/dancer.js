@@ -8,9 +8,6 @@ var Dancer = function(top, left, timeBetweenSteps){
 };
 
 Dancer.prototype.setPosition = function(top, left){
-  /* Use css top and left properties to position our <span> tag
-   * where it belongs on the page. See http://api.jquery.com/css/
-   */
   this.left = left;
   var styleSettings = {
     top: top,
@@ -25,17 +22,9 @@ Dancer.prototype.step = function(){
 };
 
 Dancer.prototype.lineUp = function() {
-  this.setPosition(this.top, 50);
+  this.setPosition($("body").height() - 100, this.left);
 };
 
 Dancer.prototype.bounce = function() {
   this.setPosition(this.top, 50);
 };
-
-
-// Function.prototype.bind = function(context) {
-//   var fn = this;
-//   return function() {
-//     fn.apply(context, arguments);
-//   };
-// };

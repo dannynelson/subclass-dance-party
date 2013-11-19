@@ -15,7 +15,3 @@ ShakyDancer.prototype.step = function() {
   };
   this.$node.css(styleSettings);
 };
-
-ShakyDancer.prototype.lineUp = function() {
-  this.left = 50;
-};
