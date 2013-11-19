@@ -16,7 +16,9 @@
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="BlinkyDancer">add a blinky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="ShakyDancer">add a shaky dancer</a>
       <a href="#" class="addDancerButton" data-dancer-maker-function-name="FancyDancer">add a fancy dancer</a>
-      <a href="#" class="lineUpButton">LINEUP!!!!</a>
+      <a href="#" class="lineUpButton">LINEUP!</a>
+      <a href="#" class="danceButton">DANCE!</a>
+
     </div>
 
     <script>
@@ -55,6 +57,15 @@
         $(".lineUpButton").on('click', function(event) {
           for (var i=0;i<dancers.length;i++) {
             dancers[i].lineUp();
+          }
+        });
+
+        $(".danceButton").on('click', function(event) {
+          for (var i = 0; i < dancers.length; i++) {
+            dancers[i].setPosition(
+             $("body").height() * Math.random(),
+             $("body").width() * Math.random()
+            );
           }
         });
 

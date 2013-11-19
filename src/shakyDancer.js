@@ -2,7 +2,6 @@ var ShakyDancer = function(top, left, timeBetweenSteps) {
   this.oldStep = Dancer.prototype.step;
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass("shaky");
-  this.left = left;
   this.shakes = Math.floor(Math.random() * 20) + 10;
 };
 

@@ -4,7 +4,7 @@ body, html{
 body{
   margin: 0px;
   background-image: url('rave-babie-blue-lights.jpg');
-  background-color:#444;
+  background-size: 100% 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -14,7 +14,7 @@ body, a:link, a:visited, a:active{
   padding:5px 12px;
   float:right;
 }
-.lineUpButton{
+.lineUpButton, .danceButton{
   padding:5px 12px;
   float:left;
 }
@@ -26,18 +26,16 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid Indigo;
+  border:15px solid Indigo;
   border-radius:20px;
   position:absolute;
   transition: .5s;
 }
 .shaky{
-  border:8px solid LimeGreen;
+  border:13px solid LimeGreen;
   border-radius:2px;
-/*  background: url("marcus_dancer.jpg");
-*/
 }
 
 .fancy{
-  border:14px solid red;
+  border:19px solid red;
 }
