@@ -28,4 +28,28 @@ body, a:link, a:visited, a:active{
 .shaky{
   border:6px solid blue;
   border-radius:2px;
+/*  background: url("marcus_dancer.jpg");
+*/
+}
+
+.fancy{
+  /*this overwrites the code placed in the html*/
+  border:10px solid red;
+  border-radius:20x;
+  animation: myfirst 5s;
+  -webkit-animation: myfirst 0.5s infinite alternate; /* Safari and Chrome */
+  /*transition: border 2s;*/
+
+  background: url("marcus_dancer.jpg");
+
+}
+
+@keyframes myfirst {
+  from {border-color: red; }
+  to {border-color: yellow;}
+}
+/* Safari and Chrome */
+@-webkit-keyframes myfirst {
+  from {border-color: red;}
+  to {border-color: yellow;}
 }
