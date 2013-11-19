@@ -58,8 +58,12 @@
           }
         });
 
-        $("body").on('click', '.dancer', function(event) {
-          $(this).css('top', '-=50');
+        $("body").on('mouseenter', '.dancer', function(event) {
+          var dancer = $(this);
+          dancer.css('top', '-=100');
+
+          // dancer.css('top', '-=100');
+          setTimeout(function() { dancer.css('top', '+=100'); }, 500);
         });
 
 
