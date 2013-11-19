@@ -2,6 +2,8 @@
 var Dancer = function(top, left, timeBetweenSteps){
   this.$node = $('<span class="dancer"></span>');
   this.timeBetweenSteps = timeBetweenSteps;
+  this.top = top;
+  this.left = left;
   this.setPosition(top, left);
   this.step();
 };
@@ -22,9 +24,14 @@ Dancer.prototype.step = function(){
   setTimeout(function() { that.step(); }, this.timeBetweenSteps);
 };
 
-Function.prototype.bind = function(context) {
-  var fn = this;
-  return function() {
-    fn.apply(context, arguments);
-  };
+Dancer.prototype.lineUp = function() {
+  this.setPosition(this.top, 50);
 };
+
+
+// Function.prototype.bind = function(context) {
+//   var fn = this;
+//   return function() {
+//     fn.apply(context, arguments);
+//   };
+// };

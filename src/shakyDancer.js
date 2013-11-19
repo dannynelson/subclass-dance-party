@@ -10,9 +10,13 @@ ShakyDancer.prototype = Object.create(Dancer.prototype);
 ShakyDancer.prototype.constructor = ShakyDancer;
 ShakyDancer.prototype.step = function() {
   this.oldStep();
-  this.shakes = (-this.shakes)
+  this.shakes = (-this.shakes);
   var styleSettings = {
     left: (this.left + this.shakes)
   };
   this.$node.css(styleSettings);
+};
+
+ShakyDancer.prototype.lineUp = function() {
+  this.left = 50;
 };
