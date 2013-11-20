@@ -70,11 +70,20 @@
         });
 
         $("body").on('mouseenter', '.dancer', function(event) {
-          var dancer = $(this);
-          dancer.css('top', '-=100');
-
-          // dancer.css('top', '-=100');
-          setTimeout(function() { dancer.css('top', '+=100'); }, 500);
+          $(this).css({
+            top: function(i, value) {
+              return (parseFloat(value) + 
+                (Math.random() > 0.5 ? 1 : -1) * 
+                ((Math.random() * 50) + 50)
+              );
+            },
+            left: function(i, value) {
+              return (parseFloat(value) + 
+                (Math.random() > 0.5 ? 1 : -1) * 
+                ((Math.random() * 50) + 50)
+              );
+            }
+          });
         });
 
 

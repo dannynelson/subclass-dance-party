@@ -12,7 +12,6 @@ FancyDancer.prototype.step = function() {
   this.changeColor();
 };
 FancyDancer.prototype.changeColor = function() {
-  debugger;
   if (this.colored) {
     this.$node.css('border-color', 'red');
     this.colored = false;
