@@ -20,3 +20,8 @@ FancyDancer.prototype.changeColor = function() {
     this.colored = true;
   }
 };
+FancyDancer.prototype.walk = function() {
+  this.oldStep();
+  this.changeColor();
+};
+

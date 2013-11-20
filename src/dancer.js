@@ -23,7 +23,8 @@ Dancer.prototype.step = function(){
 };
 
 Dancer.prototype.lineUp = function() {
-  this.setPosition($("body").height() - 100, this.left);
+  this.top = $("body").height() - 100;
+  this.setPosition(this.top, this.left);
 };
 
 Dancer.prototype.bounce = function() {

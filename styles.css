@@ -39,3 +39,26 @@ body, a:link, a:visited, a:active{
 .fancy{
   border:19px solid red;
 }
+
+.crazy{
+  width: 0; 
+  height: 0;
+  border-radius: 0px; 
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 45px solid green;
+  border-top: 0px;
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         0.5s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function:  linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
+}
